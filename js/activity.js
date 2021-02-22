@@ -13,16 +13,19 @@ $(document).ready(function () {
             $(this).toggleClass("highlighted");
 
             if ($(this).hasClass("highlighted")) {
-                $('#displaySelected').css("visibility", "visible");
-                $('#displaySelected').css("margin-top", "2em");
+                // $('#displaySelected').css("visibility", "visible");
+                // $('#displaySelected').css("margin-top", "2em");
+                $('#myModal').css("visibility", "visible");
+                $('#myModal').css("margin-top", "2em");
                 $('#result').append("<p>" + content + " at " + getHeading +"</p>");
-                
             } else {
                 $('#result p:contains(' + content + ')').remove();
 
                 if ($('#result').has('p').length == false) {
-                    $('#displaySelected').css("visibility", "hidden");
-                    $('#displaySelected').css("margin-top", "0");
+                    // $('#displaySelected').css("visibility", "hidden");
+                    // $('#displaySelected').css("margin-top", "0");
+                    $('#myModal').css("visibility", "hidden");
+                    $('#myModal').css("margin-top", "0");
                 }
             }
         }
