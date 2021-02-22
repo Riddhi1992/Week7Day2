@@ -24,7 +24,7 @@ $(document).ready(function () {
                 if ($('#result').has('p').length == false) {
                     // $('#displaySelected').css("visibility", "hidden");
                     // $('#displaySelected').css("margin-top", "0");
-                    $('#myModal').css("visibility", "hidden");
+                    // $('#myModal').css("visibility", "hidden");
                     $('#myModal').css("margin-top", "0");
                 }
             }
